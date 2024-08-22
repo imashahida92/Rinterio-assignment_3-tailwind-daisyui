@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Renterio</title>
 
        <!-- tailwind + daisy ui  -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -16,14 +16,12 @@
                 extend: {
                   colors: {
                     clifford: '#da373d',
+                    'btn-color': '#ABEF5F',
                   }
                 }
               }
             }
           </script>
-
-          <!-- font-awsome -->
-          <script src="https://kit.fontawesome.com/01deae64a9.js" crossorigin="anonymous"></script>
 
           <!-- font-Manrope  -->
           <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,17 +31,75 @@
             .manrope-font{
                 font-family: "Manrope", sans-serif;
             }
+            .back-color{
+              background: linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
+            }
           </style>
-</head>
-<body class="text-manrope-font">
-      <header>
 
+           <!-- font-awsome -->
+           <script src="https://kit.fontawesome.com/01deae64a9.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="manrope-font">
+      <header class="container w-5/6 mx-auto back-color" >
+          <!-- navigation bar  -->
+           <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <i class="fa-solid fa-circle-arrow-up fa-rotate-by fa-2xl" style="color: #abef5f; --fa-rotate-angle: 45deg;""></i>
+                  <a class="btn btn-ghost font-bold text-3xl">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-gray-500 text-md">
+                    <li class="hover:font-bold"><a>Home</a></li>
+                    <li class="hover:font-bold"><a>Services</a></li>
+                    <li class="hover:font-bold"><a>Portfolio</a></li>
+                    <li class="hover:font-bold"><a>Blogs</a></li>
+                    <li class="hover:font-bold"><a>ContactUS</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                   <div class=" md:mr-3 hidden items-center md:block ">
+                    <div class="space-x-3 flex">
+                      <i class="fa-solid fa-magnifying-glass  border rounded-full text-center p-2 " style="color: #000000;"></i>
+                      <i class="fa-solid fa-cart-arrow-down  border rounded-full text-center p-2 " style="color: #020203;"></i>
+                    </div>
+                   </div>
+                  <a class="btn bg-btn-color font-bold hidden md:block py-3">Book Consult <i class="fa-solid fa-circle-arrow-up fa-rotate-by fa-2xl" style="color: #000000; --fa-rotate-angle: 45deg;"></i></a>
+                  <div class="dropdown dropdown-left">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-8 w-8"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="4"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm  dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>ContactUS</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+           </nav>
       </header>
       <main>
 
       </main>
       <footer>
-        
+
       </footer>
 </body>
 </html>
