@@ -19,6 +19,7 @@
                     'btn-color': '#ABEF5F',
                     'title-color': '#212121',
                     'paragraph-color': '#494949',
+                    'section-color': 'rgb(243,243,243)',
                   }
                 }
               }
@@ -118,9 +119,9 @@
       <main>
 
       <!-- section design thoughtful start here -->
-       <section>
+       <section class="">
         <div class="hero bg-base-200 py-24">
-          <div class="hero-content grid grid-cols-1 lg:grid-cols-2 md:space-x-8 relative md:w-full mx-auto">  
+          <div class="hero-content grid grid-cols-1 lg:grid-cols-2 relative w-full mx-auto">  
           <img class="absolute -top-8 hidden lg:block" src="assets/Vector.png" alt="">
             <div class="space-y-6">
               <div class="space-y-6 text-center lg:text-start">
@@ -153,11 +154,11 @@
        </section>
 
        <!-- small card section start  here -->
-        <section class="lg:py-8 bg-[rgb(243,243,243)]">
-           <div class="bg-white w-4/5 mx-auto py-6 border-none rounded-3xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <section class="lg:py-8 bg-section-color">
+           <div class="w-4/5 container bg-white mx-auto py-6 border-none rounded-3xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             
             <!-- card-1 -->
-            <div class="card bg-white w-auto mx-auto p-6 rounded-none">
+            <div class="card w-auto mx-auto p-6 rounded-none">
               <figure class=" ">
                 <img src="assets/message-regular.svg" alt="">
               </figure>
@@ -168,7 +169,7 @@
             </div>
 
             <!-- card-2 -->
-            <div class="card bg-white w-auto mx-auto p-6 rounded-none">
+            <div class="card w-auto mx-auto p-6 rounded-none">
               <figure class=" ">
                 <img src="assets/building-user-solid.svg" alt="">
               </figure>
@@ -179,7 +180,7 @@
             </div>
 
             <!-- card-3 -->
-            <div class="card bg-white w-auto mx-auto p-6 rounded-none">
+            <div class="card w-auto mx-auto p-6 rounded-none">
               <figure class=" ">
                 <img src="assets/people-group-solid.svg" alt="">
               </figure>
@@ -190,7 +191,7 @@
             </div>
 
             <!-- card-1 -->
-            <div class="card bg-white w-auto mx-auto p-6 rounded-none">
+            <div class="card w-auto mx-auto p-6 rounded-none">
               <figure class=" ">
                 <img src="assets/user-large-solid.svg" alt="">
               </figure>
@@ -201,6 +202,17 @@
             </div>
            </div>
         </section>
+
+
+        <!-- work process section start here -->
+         <section class=" mx-auto lg:py-8 bg-section-color">
+          <!-- workpress section -->
+            <div class=" container w-4/5 lg:w-1/2 mx-auto  pt-6 text-center space-y-4">
+              <button class=" btn btn-neutral bg-white border-none rounded-full text-gray-800 font-bold"><i class="fa-solid fa-arrow-right" style="color: #413e3e;"></i>How we works</button>
+              <h3 class="text-4xl font-extrabold text-title-color ">Our Works Process</h3>
+              <p class="paragraph-color text-sm font-semibold opacity-90">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+         </section>
       </main>
       <footer>
 
